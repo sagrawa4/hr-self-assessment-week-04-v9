@@ -1,0 +1,20 @@
+{
+  "name": "node-express-sequelize",
+  "version": "1.0.0",
+  "description": "Create a request handler for the /users route to return all users in the database",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Hack Reactor",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sequelize": "^6.3.5",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "request": "^2.88.2",
+    "should": "^13.2.3"
+  }
+}
