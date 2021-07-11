@@ -9,11 +9,14 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
+var sqlPublisherAuthorSchema =  Schemas.OPTION_3;
+// Since the realtion b/w Publisher and Author is ONE TO MANY i.e A publisher can have many
+// Authors, having a PK of publisher as a FK in Author maintains the relation.
 
-var sqlPublisherGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
+var sqlPublisherGenreSchema =  Schemas.OPTION_6; // TODO: Update this constant
+// Since the realtion b/w Publisher and Genre is MANY TO MANY i.e A publisher can have many
+// Genre and a a Genre can have many publisher, Hence an associaltion table/Join
 
-var sqlAuthorGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
+
+var sqlAuthorGenreSchema =  Schemas.OPTION_3; // TODO: Update this constant
+// Since the realtion b/w Author and Genre is ONE To Many
