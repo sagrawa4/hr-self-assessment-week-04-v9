@@ -2,6 +2,12 @@ var app = require('./server').app;
 var User = require('./server').User;
 var port = 3000;
 
+app.get('/users', (req, res) => {
+  User.findAll().then((users) => {
+    res.json(users);
+  });
+});
+
 User.sync({ force: true })
   .then(function () {
     console.log('Users table created');
@@ -13,4 +19,3 @@ User.sync({ force: true })
       console.log('node-express-sequelize listening on ' + port);
     });
   });
-  
